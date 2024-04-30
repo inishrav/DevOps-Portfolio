@@ -250,7 +250,7 @@ export default class sidebar extends Component {
               <div className="author-img" style={{backgroundImage: 'url(images/me.jpg)'}} />
               <h1 id="colorlib-logo">
                 <a href="index.html">
-                  <img src="images/me.jpg" style={{ width: '100px', height: '100px', borderRadius: '50%' }} />
+                  <img src="images/me.jpg" alt="User" style={{ width: '100px', height: '100px', borderRadius: '50%' }} />
                 </a>
               </h1>
               <span className="email">
