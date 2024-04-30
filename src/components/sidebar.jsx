@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Sidebar extends Component {
+export default class sidebar extends Component {
   render() {
     return (
       <div>
@@ -49,7 +49,7 @@ export default class Sidebar extends Component {
                     <a href="Certifications" data-nav-section="Certifications"></a>
                   </li>
                   <li>
-                    <a href="Projects" data-nav-section="projects"></a>
+                    <a href="projects" data-nav-section="projects"></a>
                   </li>
                 </ul>
               </div>
