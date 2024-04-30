@@ -1,23 +1,23 @@
-name: Build and Push Docker Image
-run-name: ${{ github.actor }} is running this GitHub Actions with Docker Pipeline 
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build-and-push:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Check out Repository code
-      uses: actions/checkout@v2
-    - name: Login to Docker Hub
-      uses: docker/login-action@v2
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-    
-    - name: Build Docker Image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_IMAGENAME}} .
-      
-    - name: Push Docker Image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_IMAGENAME }}
+# Use the official Node.js image as base
+FROM node:14-alpine as build
+
+# Set the working directory in the container
+WORKDIR /DevOps-Portfolio
+
+# Copy package.json and package-lock.json (if available) to the container
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the entire application to the container
+COPY . .
+
+# Build the React app   
+RUN npm run build
+
+# Expose port 3000 for the Node.js server (optional, depending on your setup)
+EXPOSE 3000
+
+# Command to run the React app
+CMD ["npm", "start"]
