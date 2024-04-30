@@ -5,7 +5,7 @@ import Introduction from './components/introduction'
 import About from './components/about'
 import Education from './components/Education'
 import Certifications from './components/Certifications'
-import projects from './components/projects'
+import Projects from './components/projects'
 class App extends Component {
   render() {
     return (
@@ -17,7 +17,7 @@ class App extends Component {
 					<About></About>
 					<Education></Education>
           <Certifications></Certifications>
-        <projects></projects>
+        <Projects></Projects>
           	</div>
       	</div>
       </div>
