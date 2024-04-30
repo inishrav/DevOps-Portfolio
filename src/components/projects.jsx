@@ -24,9 +24,9 @@ export default class projects extends Component {
                         <h2>Banking ChatBot-Virtual Assistant of AI <span>Work 01</span></h2>
                         <p>Project Description</p>
                         <p className="icon">
-                          <span><a href="#"><i className="icon-share3" /></a></span>
-                          <span><a href="#"><i className="icon-eye" /> 100</a></span>
-                          <span><a href="#"><i className="icon-heart" /> 49</a></span>
+                          <span><a href="#home"><i className="icon-share3" /></a></span>
+                          <span><a href="#home"><i className="icon-eye" /> 100</a></span>
+                          <span><a href="#home"><i className="icon-heart" /> 49</a></span>
                         </p>
                       </div>
                     </div>
@@ -40,9 +40,9 @@ export default class projects extends Component {
                         <h2>DevOps-Portfolio <span>Work 02</span></h2>
                         <p>Project Description</p>
                         <p className="icon">
-                          <span><a href="#"><i className="icon-share3" /></a></span>
-                          <span><a href="#"><i className="icon-eye" /> 100</a></span>
-                          <span><a href="#"><i className="icon-heart" /> 49</a></span>
+                          <span><a href="#home"><i className="icon-share3" /></a></span>
+                          <span><a href="#home"><i className="icon-eye" /> 100</a></span>
+                          <span><a href="#home"><i className="icon-heart" /> 49</a></span>
                         </p>
                       </div>
                     </div>
@@ -56,9 +56,9 @@ export default class projects extends Component {
                         <h2>Web Design <span>Work 06</span></h2>
                         <p>Project Description</p>
                         <p className="icon">
-                          <span><a href="#"><i className="icon-share3" /></a></span>
-                          <span><a href="#"><i className="icon-eye" /> 100</a></span>
-                          <span><a href="#"><i className="icon-heart" /> 49</a></span>
+                          <span><a href="#home"><i className="icon-share3" /></a></span>
+                          <span><a href="#home"><i className="icon-eye" /> 100</a></span>
+                          <span><a href="#home"><i className="icon-heart" /> 49</a></span>
                         </p>
                       </div>
                     </div>
