@@ -232,7 +232,7 @@
 
 import React, { Component } from 'react';
 
-export default class Sidebar extends Component {
+export default class sidebar extends Component {
   render() {
     return (
       <div>
